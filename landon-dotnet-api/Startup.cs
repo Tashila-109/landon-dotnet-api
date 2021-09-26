@@ -27,6 +27,7 @@ namespace landon_dotnet_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddRouting(options => options.LowercaseUrls = true);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "landon_dotnet_api", Version = "v1" });

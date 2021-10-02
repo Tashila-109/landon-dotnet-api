@@ -31,6 +31,7 @@ namespace landon_dotnet_api
             services.AddControllers(options =>
             {
                 options.Filters.Add<JsonExceptionFilter>();
+                options.Filters.Add<RequireHttpsOrCloseAttribute>();
             });
             services.AddRouting(options => options.LowercaseUrls = true);
             services.AddSwaggerGen(c =>

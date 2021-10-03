@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -30,6 +31,9 @@ namespace landon_dotnet_api
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<HotelInfo>(Configuration.GetSection("Info"));
+            
+            // Use in-memory database for quick development and testing
+            services.AddDbContext<HotelApiDbContext>(options => options.UseInMemoryDatabase("landondb"));
             
             services.AddControllers(options =>
             {

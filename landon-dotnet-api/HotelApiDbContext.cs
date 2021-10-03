@@ -1,3 +1,4 @@
+using landon_dotnet_api.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace landon_dotnet_api

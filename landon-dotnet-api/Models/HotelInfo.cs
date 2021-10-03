@@ -9,7 +9,7 @@ namespace landon_dotnet_api.Models
         public Address Location { get; set; }
     }
 
-    public abstract class Address
+    public class Address
     {
         public string Street { get; set; }
         public string City { get; set; }

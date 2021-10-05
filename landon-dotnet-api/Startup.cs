@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using landon_dotnet_api.Filters;
+using landon_dotnet_api.Infrastructure;
 using landon_dotnet_api.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,6 +56,8 @@ namespace landon_dotnet_api
             });
 
             services.AddCors(options => { options.AddPolicy("AllowMyApp", policy => policy.AllowAnyOrigin()); });
+
+            services.AddAutoMapper(options => options.AddProfile<MappingProfile>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -22,11 +22,11 @@ namespace landon_dotnet_api.Models
         [DefaultValue(GetMethod)]
         public string Method { get; set; }
         
-        // Stores the route name before being rewritten by the LinkRewritingFilter
+        // Stores the Route Name before being rewritten by the LinkRewritingFilter
         [JsonIgnore]
         public string RouteName { get; set; }
         
-        // Stores the route parameters before being rewritten by the LinkRewritingFilter
+        // Stores the Route Parameters before being rewritten by the LinkRewritingFilter
         [JsonIgnore]
         public object RouteValues { get; set; }
     }

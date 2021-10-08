@@ -26,7 +26,7 @@ namespace landon_dotnet_api.Models
         [JsonIgnore]
         public string RouteName { get; set; }
         
-        // Stores the Route Parameters before being rewritten by the LinkRewritingFilter
+        // Stores the Route Parameters or Values before being rewritten by the LinkRewritingFilter
         [JsonIgnore]
         public object RouteValues { get; set; }
     }

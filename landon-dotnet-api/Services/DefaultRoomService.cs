@@ -12,6 +12,7 @@ namespace landon_dotnet_api.Services
         private readonly HotelApiDbContext _context;
         private readonly IMapper _mapper;
 
+        // Roome service constructor
         public DefaultRoomService(HotelApiDbContext context, IMapper mapper)
         {
             _context = context;

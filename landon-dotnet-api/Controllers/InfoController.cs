@@ -10,6 +10,8 @@ namespace landon_dotnet_api.Controllers
     public class InfoController : ControllerBase
     {
         private readonly HotelInfo _hotelInfo;
+        
+        // Info controller constructor
         public InfoController(IOptions<HotelInfo> hotelInfoWrapper)
         {
             _hotelInfo = hotelInfoWrapper.Value;

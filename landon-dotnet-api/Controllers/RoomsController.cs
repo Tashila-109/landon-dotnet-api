@@ -14,6 +14,7 @@ namespace landon_dotnet_api.Controllers
     {
         private readonly IRoomService _roomService;
 
+        // Rooms controller Constructor
         public RoomsController(IRoomService roomService)
         {
             _roomService = roomService;

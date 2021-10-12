@@ -10,6 +10,7 @@ namespace landon_dotnet_api.Filters
     {
         private readonly IWebHostEnvironment _env;
 
+        // JSON exception filter constructor method
         public JsonExceptionFilter(IWebHostEnvironment env)
         {
             _env = env;

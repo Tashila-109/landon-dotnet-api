@@ -5,6 +5,7 @@ namespace landon_dotnet_api.Filters
 {
     public class RequireHttpsOrCloseAttribute : RequireHttpsAttribute
     {
+        // Handle non https request
         protected override void HandleNonHttpsRequest(AuthorizationFilterContext filterContext)
         {
             filterContext.Result = new StatusCodeResult(400);

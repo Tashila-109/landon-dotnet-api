@@ -1,5 +1,6 @@
 namespace landon_dotnet_api.Models
 {
+    // Hotel info response class
     public class HotelInfo : Resource
     {
         public string Title { get; set; }

@@ -3,6 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace landon_dotnet_api.Models
 {
+    // Link Class
     public class Link
     {
         private const string GetMethod = "GET";
